@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="dark">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- 更新SEO信息 -->
+  <title>omofun动漫网 - 专注动漫的门户网站</title>
+  <meta name="keywords" content="omofun动漫网, 动漫资源, 高清播放, 追番神器" />
+  <meta name="description" content="OmoFun动漫网提供海量高清完整版国创、番剧等视频资源，极速播放和极佳的手机观看体验。">
+
+  <link rel="shortcut icon" href="./files/omofun.png">
+  <link rel="preload stylesheet" href="./files/style.9b4b7f3f.css" as="style">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF4D4F',
+            secondary: '#FF7A45',
+            dark: '#1E1E2E',
+            light: '#F5F5F5',
+            'dark-gray': '#4E4E5E',
+            'light-gray': '#E5E5E5'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .nav-link {
+        @apply relative text-dark-gray hover:text-primary transition-colors duration-300;
+      }
+      .nav-link::after {
+        @apply content-[''] absolute w-0 h-0.5 bg-primary left-0 -bottom-1 transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .nav-link.active {
+        @apply text-primary font-medium;
+      }
+      .nav-link.active::after {
+        @apply w-full;
+      }
+      .btn-primary {
+        @apply bg-primary hover:bg-primary/90 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+      }
+      .btn-secondary {
+        @apply bg-white border border-primary text-primary hover:bg-primary/5 font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+      }
+      .feature-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+      }
+      .faq-title {
+        @apply text-[clamp(1.5rem,3vw,2rem)] font-bold text-dark mb-6;
+      }
+      .title {
+        @apply text-xl font-bold text-dark mb-3;
+      }
+      .details {
+        @apply text-dark-gray leading-relaxed;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 新增导航栏 -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="./files/omofun.png" alt="OmoFun动漫网" class="h-10 mr-2">
+          <!-- 更新网站名称 -->
+          <span class="text-xl font-bold text-primary">OmoFun动漫网</span>
+        </div>
+        
+        <!-- 桌面导航 -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#about" class="nav-link">网站简介</a>
+          <a href="#features" class="nav-link">功能特点</a>
+          <a href="#steps" class="nav-link">使用步骤</a>
+          <a href="#faq" class="nav-link">常见问题</a>
+          <a href="#reviews" class="nav-link">用户评价</a>
+        </div>
+        
+        <!-- 移动端菜单按钮 -->
+        <button id="menu-toggle" class="md:hidden text-dark-gray hover:text-primary focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+      
+      <!-- 移动端导航菜单 -->
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-light-gray shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a href="#home" class="nav-link py-2 active">首页</a>
+          <a href="#about" class="nav-link py-2">网站简介</a>
+          <a href="#features" class="nav-link py-2">功能特点</a>
+          <a href="#steps" class="nav-link py-2">使用步骤</a>
+          <a href="#faq" class="nav-link py-2">常见问题</a>
+          <a href="#reviews" class="nav-link py-2">用户评价</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Layout" data-v-b2cf3e0b="">
+      <div class="VPContent is-home" id="VPContent" data-v-b2cf3e0b="" data-v-a494bd1d="">
+        <!-- 为Hero部分添加ID -->
+        <div id="home" class="VPHome pt-24" data-v-a494bd1d="" data-v-d82743a8="">
+          <div class="VPHero has-image VPHomeHero" data-v-d82743a8="" data-v-fd2650d5="">
+            <div class="container" data-v-fd2650d5="">
+              <div class="main" data-v-fd2650d5="">
+                <!-- 更新网站名称 -->
+                <h1 class="name" data-v-fd2650d5="" style="display: flex; align-items: center; white-space: nowrap;">
+                  <img src="./files/omofun.png" alt="OmoFun动漫网" style="max-height:60px;">
+                  <span style="color:#111;">OmoFun动漫网</span>
+                </h1>
+                <!-- 更新副标题 -->
+                <p class="text" data-v-fd2650d5="" style="line-height:1.2rem;margin:10px 0;"><span
+                    style="font-size:1.2rem;font-weight:400;"><strong>动漫爱好者的天堂，海量资源与极致体验尽在OmoFun！</strong></span><br /><span
+                    style="font-size:1rem;font-weight:400;">提供海量高清动漫资源，支持多语言字幕，实时更新，满足全球动漫迷需求。</span></p>
+
+                <div class="actions" data-v-fd2650d5="">
+                  <!-- 更新官网入口链接 -->
+                  <div class="action" data-v-fd2650d5=""><a class="VPButton medium brand"
+                      href="https://www.rymdh.com/sites/1587.html" target="_blank" data-v-fd2650d5=""
+                      data-v-567ba664="">
+                      官网入口</a></div>
+
+<div class="action" data-v-fd2650d5=""><a class="VPButton medium alt" href="https://pan.quark.cn/s/0db22432c259" target="_blank"   content="nofollow no-referrer"  data-v-fd2650d5="" data-v-567ba664="">经典电影/无损音乐</a></div>
+                </div>
+              </div>
+
+              <div class="image" data-v-fd2650d5=""><div class="image-container" data-v-fd2650d5=""><div
+                    class="image-bg" data-v-fd2650d5=""></div><img class="VPImage image-src"
+                    src="./files/omofun.jpg" alt="OmoFun动漫网" data-v-6db2186b=""
+                    style="border-radius:15px;background: #fff;padding: 5px;border: 1px solid #eee;"></div></div>
+          </div>
+        </div>
+
+        <!-- 新增的网站介绍版块 -->
+        <div id="about" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            OmoFun是什么？
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8;">
+                      OmoFun动漫网是一个专注于动漫领域的门户网站，致力于为用户提供丰富多样的动漫资源。无论是热门新番还是经典老番，用户都能在这里找到自己喜爱的作品。平台支持高清画质播放，并且提供无广告干扰的优质观看体验，让用户能够专注于享受动漫内容。此外，OmoFun还具备强大的搜索功能和分类筛选机制，帮助用户快速定位心仪的作品。
+                    </p>
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8; margin-top: 15px;">
+                      OmoFun动漫网拥有丰富的动漫资源库，涵盖日漫、国漫、美漫等多种类型，满足不同用户的观看需求。同时，平台每日更新最新动漫资讯，确保用户第一时间追上最新剧情。
+                    </p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="features" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            OmoFun功能特点
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">1.海量动漫资源</h3>
+                    <p class="details" data-v-837f6cca="">
+                      OmoFun动漫网汇集了国内外热门及经典动漫资源，包括日本、韩国、欧美等地区的经典作品。用户可以轻松找到各种类型的动漫，如热血战斗、校园生活、科幻冒险等。平台还支持多语言字幕，方便全球用户无障碍观看。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">2.高清画质与流畅播放</h3>
+                    <p class="details" data-v-837f6cca="">
+                      OmoFun动漫网提供多种清晰度选项，最高可达4K品质，确保用户在任何网络环境下都能享受到清晰流畅的观影体验。此外，平台支持离线下载功能，用户可以在无网络情况下观看已下载的动漫资源。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">3.个性化推荐与社区互动</h3>
+                    <p class="details" data-v-837f6cca="">
+                      OmoFun动漫网根据用户的观看历史和偏好智能推荐动漫作品，并内置活跃的社区功能，用户可以与其他动漫爱好者交流心得、分享资源和讨论剧情。平台还支持弹幕互动，增加观看的趣味性和参与感。
+                    </p>
+                  </article></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div id="steps" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            OmoFun使用步骤
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+
+                    <h3 class="title" data-v-837f6cca="">1. 注册与登录</h3>
+                    <p class="details" data-v-837f6cca="">
+                      用户需先访问OmoFun官网（omofun.in ），点击注册按钮填写相关信息完成账号创建。登录后即可享受全部功能。对于已有账号的用户，可直接登录进入主界面。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">2.浏览与搜索资源</h3>
+                    <p class="details" data-v-837f6cca="">
+                      登录后，用户可通过搜索框输入关键词快速查找目标作品。平台还提供详细的分类标签，如类型、地区、年份等，方便用户按需筛选适合的内容。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">3. 观看与互动</h3>
+                    <p class="details" data-v-837f6cca="">
+                      用户选择心仪的作品后，可选择在线观看或下载离线观看。观看过程中，用户可通过弹幕功能与其他观众互动，并在评论区发表自己的看法。此外，用户还可以将喜欢的作品添加到个人收藏夹中。
+                    </p>
+                  </article></span>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 常见问题版块 -->
+        <div id="faq" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            OmoFun常见问题
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">无法访问网站</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 可能是网络问题或服务器维护导致。建议更换网络环境或稍后再试。如果问题持续，请联系客服获取帮助。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">视频卡顿或无法播放</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 建议切换清晰度设置为较低选项，并检查网络连接是否稳定。若问题仍未解决，可尝试清理浏览器缓存或使用其他设备访问。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">找不到喜欢的动漫</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 可以通过搜索框输入关键词查找，或使用分类筛选功能按类型、地区等条件筛选作品。此外，平台每日更新热门推荐榜单，可关注最新上线的动漫。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">无法下载离线观看</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 确保已登录账号并开启下载权限。若仍无法下载，请检查存储空间是否充足，并尝试重新登录账号。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">弹幕功能无法使用</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 弹幕功能可能因网络延迟或服务器维护暂时不可用。建议稍后再试或切换到其他时间段访问。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">忘记密码</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 用户可通过点击登录页面的“忘记密码”链接，输入注册邮箱或手机号进行密码重置。若仍无法重置，请联系客服获取帮助。
+                    </p>
+                  </article></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 用户评价版块 -->
+        <div id="reviews" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            用户评价
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/236/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">二次元小王子</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★★</div>
+                    <p class="details" data-v-837f6cca">OmoFun真的太棒了！资源丰富，画质清晰，无广告干扰，是我追番的最佳选择！</p>
+                  </article>
+                </span>
+              </div>
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/1031/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">漫迷小仙女</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★☆</div>
+                    <p class="details" data-v-837f6cca">平台的个性化推荐功能特别贴心，总能发现一些新番好剧。社区互动也很有趣，结识了很多志同道合的朋友！</p>
+                  </article>
+                </span>
+              </div>
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/1021/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">动漫狂热粉</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★★</div>
+                    <p class="details" data-v-837f6cca">OmoFun的高清画质和流畅播放让我每次追番都充满期待。无论是国漫还是日漫，这里都有！</p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="VPFooter" data-v-b2cf3e0b="" data-v-f7fc41f4=""><div class="container" data-v-f7fc41f4=""><p class="copyright" data-v-f7fc41f4=""><strong>觉得很不错？那就按住Ctrl+D键组合，把本网站加入你的浏览器收藏夹吧！</strong></p>
+
+    <p class="copyright" data-v-f7fc41f4="">Copyright ©2025 OmoFun动漫网</p>
+         </div></footer>
+
+    </div>
+  </div>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-3');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('py-3');
+        navbar.classList.remove('py-2');
+      }
+      
+      // 更新导航栏激活状态
+      const sections = document.querySelectorAll('div[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // 移动端菜单切换
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // 关闭移动端菜单（如果打开）
+        document.getElementById('mobile-menu').classList.add('hidden');
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
